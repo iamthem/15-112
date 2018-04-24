@@ -1,0 +1,107 @@
+check3.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id: 
+Leandro Lopez
+lslopez
+
+2. The full names and andrew id's of your groupmates, if you worked in a group. 
+Kunal Jobanputra
+kjobanpu
+
+3. Dates/times that you watched the videos listed in check3.html (fill this out as you go): 
+1923, 1940, 1956, 2006, 2010, 2014, 2021, 2035, 2040, 2043
+
+4. Total time this check required (fill this out when you are done):
+
+5. Strings questions (from the various String videos):
+
+5.1. Why is len('a\nb') equal to 3 and not 4?
+Because '\n' is an escape sequence, which has its own ASCII number 
+
+5.2. List a character that is easier to include in a string delimited by double-quotes rather than single-quotes.
+Single quotes 
+
+5.3. List each escape sequence mentioned in the video (like \n) and what they mean.
+\n -> newline 
+\t -> tab character 
+\\ -> backslash
+\' -> Single quote 
+\" -> Double quote
+\r -> carriage return 
+
+5.4. What is type(string.digits)?  Why?
+It's a string because it's called from a string function, 
+so it prints out the numbers as a string.
+
+5.5. For any string s where len(s)>1, is it definitely true that ((s[1:] in s) == True)?
+Yes, the slice s[1:] will return the substring from index two until the end of s
+
+5.6. What is the empty string?  What is its type?  What is its length?
+An empty string is a string without anything on it. It looks like this: ""
+Its type continues to be a string 
+Its length is zero
+
+5.7. What is "abcde"[-1]?
+"e"
+
+5.8. What is 'abcde'[-1][-1]?  Briefly explain why that works, but 'abcde'[1][1] crashes.
+"e"
+It works because the it is asking for the last character in 'abcde', which is "e", and subsequently
+asking for the last character in "e", which is still "e". It chrashes on the second example because 
+"b" does not have a character at index 1.
+
+5.9. Briefly, why did we write the function reverseString in the video, rather than just using s[::-1] in our code?
+Because it is much more intuitive than the slicing equivalent
+
+5.10. Briefly, what is the difference between split and splitlines?
+Split breaks a given string by a specified delimiter.
+Splitlines splits the string at the line boundaries like \n, and \r
+
+5.11. Please be sure to carefully watch the videos and take time
+to discuss and reflect on their content, and not just hurry through
+and answer all these questions.  The point of this check is not for
+you to answer the questions, but for you to learn the material.  So
+please take the time to learn the material well.  Ok?
+Ok
+
+5.12. Of the first 4 ways we solve isPalindrome, which way do you think
+is the worst, and why so?
+Solution four is the worst due to inappropriate use of a while loop that makes the 
+code 5 times as long as it needs to be 
+
+5.12. What does it mean that Strings are immutable?
+Is means that they cannot be changed in place, like lists for instance. 
+For instance this will return an error: 
+L[1] = 'a' for some string L 
+
+5.13. What is the difference between a string method and a string function?
+A string method is called in the format str.method() while a string function is called 
+in the format function(str). Methods manipulate or test the string while functions take 
+string as inputs in order to do something useful (which could also be a string)
+
+5.14. What is the difference between chr and ord?
+ord() and chr() are inverses of each other. They convert 
+back and forth between unicode code points and strings
+
+5.15. What is the difference between lower and islower?
+lower() returns a copy of the string in lower case 
+islower() tells you if there are lower case characters in 
+a given string 
+
+5.16. How do you left-align text using the string formatting operator?
+using '-' right after the % character and before the integer that determines space
+
+5.17. Why does the Basic File IO example crash if you run it in the browser?
+It crashes because it doesn't have access to the local file system. 
+
+That's it!  Carpe diem!
+

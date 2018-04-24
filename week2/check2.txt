@@ -1,0 +1,104 @@
+check2.txt
+
+Edit this file and then submit it to Autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id: Leandro Lopez, lslopez
+
+2. The full names and andrew id's of your groupmates (if you worked collaboratively).
+
+3. Dates/times that you watched the videos listed in check2.html (fill this out as you go): 09/05/17 at the following times: 
+0808, 0853, 0901, 0910, 0912, 0931
+
+4. Total time this check required (fill this out when you are done):
+60 minutes
+
+5. "for loops" video:
+
+5.1. Briefly explain the meaning of each value m, n, and k in the expression range(m, n, k).
+m is the lower bound, inclusive
+n is the upper bound, exclusive 
+k is the number of steps to be taken
+
+5.2. What was so "terrible" about the last solution to sumOfOddsFromMToN?
+Going in reverse steps is less intuitive
+
+
+5.3. Run the last example of sumOfOddsFromMToN in the course notes, using the "Run" button in the course notes, so you are running it in Brython (in the browser).  Then, edit the code so that the third value in the range expression is the integer 0 instead of the integer 2.  Run it.  It will crash.  Copy-paste the error message here.  (Aside: is this what you expected?)
+ValueError: range() arg 3 must not be zero. Yes, it is impossible to have a range with zero steps. 
+
+5.4. Repeat the previous problem, only here replace the third value with 0.1 instead of the integer 2.  Again, it will crash.  Copy-paste the error message here.  (Aside: is this what you expected?)
+TypeError: 'float' object cannot be interpreted as an integer. Yes, the range function works only with integers
+
+6. "nested for loops" video:
+
+6.1. In the first example in this section, why do we use end="" in the inner print statement, but not in the outer print statement?
+In order to prevent the creation of a new line after every print statement
+6.2. What is the mystery star shape?
+It comes about when the inner loop is dependent on the outer loop's variable. Thus it is able to produce shapes based on the operation in inside range().
+
+
+6.3. Modify the code for the mystery star shape so that it prints the same shape, only upside down (so the last row becomes the first row, and so on).  Include your code here.
+
+def printMysteryStarShape(n):
+    for row in range(n):
+        print(row, end=" ")
+        for col in range(n - row):
+            print("*", end=" ")
+        print()
+
+printMysteryStarShape(5)
+
+7. "while loops" video:
+
+7.1. When in general would you prefer a "while" loop to a "for" loop?
+When the number of iterations of the loop are unknown.
+
+7.2. Why do we need to use a while loop in the leftmostDigit example?
+We don't know the length of the number
+
+7.3. What is the bug in the buggySumToN example?
+The counter is being added by one before being added to the total, thus inflating the total count.
+
+8. "break and continue" video:
+
+8.1. What precisely does a break statement do?
+Terminates loop 
+
+8.2. What precisely does a continue statement do?
+End this pass, and continue onto the next iteration
+
+9. "isPrime" video:
+
+9.1. What would go wrong if we omitted the if statement at the start of isPrime?
+0,1,2 would be returned as primes.
+
+9.2. What is it that makes fasterIsPrime so much faster than isPrime?  (Hint: it's not the bit about evens and odds (that helps, but not nearly so much as something else.))
+By only going up to the square root of the number n. 
+
+9.3. Run the timing code (the last code in this section) using Brython in the browser.  How long does isPrime(499) take?  fasterIsPrime(499)?
+isPrime(499) takes 75 ms
+fasterIsPrime(499) takes 42 ms
+
+9.4. Repeat 9.3, only this time running the same code in Pyzo or Sublime.  Now how long do they take?  These numbers are very different from your answer to 9.3.  Very briefly, explain why.
+I don't use Pyzo, but the terminal returns 
+isPrime(499) => 112 ms
+fasterIsPrime => 38 ms
+I'm guessing isPrime()'s inefficiency is made more evident by the local interpreter. 
+
+10. "nthPrime" video:
+
+10.1. In addition to its parameter n, nthPrime uses two local variables -- found and guess.  What precisely do each of these values mean here?
+Guess is a counter which is counts from 0 to n. Found keeps the number of primes in the range.
+
+10.2. Why does nthPrime use a while loop instead of a for loop?
+Because we don't know how many numbers we are going to have to check to find the nth prime number (Unknown range)
+
+That's it!  Carpe diem!
+

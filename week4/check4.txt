@@ -1,0 +1,106 @@
+check4.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id:
+Leandro Lopez
+lslopez
+
+2. The full names and andrew id's of your groupmates, if you worked in a group.
+Daniel Shaer
+dscher
+
+3. Dates/times that you watched the videos listed in check4.html (fill this out as you go):
+2118, 2121, 2123, 2127, 2130, 0900, 0904, 0910, 0913, 0915, 0920, 0927, 0931
+
+4. Total time this check required (fill this out when you are done):
+70 minutes
+
+5. Graphics questions:
+
+5.1: How would you modify the provided code to make a 400x800 window?
+def runDrawing(width=400, height=800):
+
+5.2: What do the four main variables in create_rectangle represent?
+first two are origin coordinates, second two are width, and height
+
+5.3: How do you get rid of the rectangle's outline?
+set width=0
+
+5.4: Why do we use rectWidth/2 and rectHeight/2 instead of rectWidth and rectHeight when drawing the inner rectangle
+Because we are measuring the width from the center point, which is half the total width/height
+
+5.5: Find the RGB values for your favorite color on http://www.rapidtables.com/web/color/RGB_Color.htm and write a line of code to generate a rectangle in that color. Paste your code here.
+silver = rgbString(192,192,192); canvas.create_rectangle(0, 0, 400, 200, fill=silver)
+
+5.6: How did we change the position of the 'Carpe Diem!' text without changing the given x and y values?
+By changing the value of anchor, which specifies in which corner the starting point is placed.
+
+5.7: Why did we use x1 instead of x0 + width*3/3 for the third stripe of the flag?
+Because the third stripe is at the end, its width ends at the rightmost point, x1. 
+
+5.8: Why do we use cy - r*sin(angle) when rotating around the circle?
+Because to go up on the screen, you have to substract from y.
+
+5.9 Note the current time, then add a call to drawClock into draw that displays that time. Then trace through the code by hand. Make sure you understand how the minute and hour hands were generated in the correct positions. Include your new line of code below.
+drawClock(canvas, 0, 0, 200, 400, 9, 30)
+
+6. 1d Lists and Tuples questions:
+
+6.1: Why is type([1,3,5,7]) == type(["a", "b", "c", "d"]) True?
+Because both objects are lists, regardless of their elements
+
+6.2: What do you think a[:2] is, if a = [2, 3, 5, 7, 11, 13]? Check to see if you're right after making a prediction.
+[2,3]
+
+6.3: What problems could arise in your code due to function parameters being aliases?
+Lists could be changed by a function unintentionally, causing errors later in the code
+
+6.4: Why should you check (if value in a) before calling a.index(value)?
+Becase if you call for a value that isn't there you'll get a ValueError
+
+6.5: If a = [2, 3, 4, 5], what happens when you run a.insert(1, 42)?
+The new value of a is [2, 42, 3, 4, 5]
+
+6.6: What happens if you call .pop() on an empty list?
+IndexError occurs since list is empty
+
+6.7: We demonstrated two correct ways to swap elements in a list. Which do you think is clearer?
+The first way is more intuitive, but the second is more powerful.
+
+6.8: Why is it a bad idea to modify a list while looping through it?
+Because as the list decreases in size, it will eventually run out of indices and crash
+
+6.9: Is [] < [0]? Why or why not?
+True, the empty list is less than any nonempy list 
+
+6.10: We demonstrated multiple ways to make a non-aliased copy of a. Which one do you think is best and why?
+c = a[:] is my favorite due to its compactness and use of slicing
+
+6.11: Write a line of code that sorts a list of strings based on the length of the strings.
+a.sort(key=len)
+
+6.12: Why do some list functions not use return statements?
+Because the list object is changed in place, no need to return it.
+
+6.13: How are tuples different from lists?
+Tuples are immutable, they can't be changed in place.
+
+6.14: Write a list comprehension that has the same result as the following code:
+lst = []
+for i in range(10):
+    lst.append(i * 3)
+
+[i *3 for i in range(10)]
+
+6.15: We can change the delimiter (the text that separates values) in a piece of text using a combination of split and join. Write a line of code that change's the delimiter of the string s from "\t" to ",".
+s.split('\t').remove('\t');"".join(s)
+
+That's it!  Carpe diem!

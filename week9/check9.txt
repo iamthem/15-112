@@ -1,0 +1,61 @@
+check9.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id: Leandro Lopez lslopez
+
+2. The full names and andrew ids of your groupmates, if you worked in a group.
+
+3. Dates/times that you watched the videos listed in check9.html (fill this out as you go): 10/23/17 at:
+2114, 2120, 2136, 2140, 2144, 2155, 2200, 2204, 2211, 2225, 2240
+
+4. Total time this check required (fill this out when you are done):
+75 minutes 
+5. Object-Oriented Programming Questions:
+
+5.1 What is the different between an instance and a class?
+Classes generate instances. Instances record data that varies per object 
+
+5.2 In the video about testing equality of objects, why did A(5) == 9 initially crash?
+Because 9 is not an instance of the A class
+
+5.3 Why doesn't our code crash when we call A('yellow', True), even though our __init__ function has three parameters?
+Because the self parameter is a reference to the instance we are creating. 
+
+5.4 Why should we write __repr__ instead of __str__ in most cases?
+To avoid having to define both a __str__ and a __repr__ 
+
+5.5 Write a one-line __hash__ method for a class, Book, which has two variables, title and author.
+def __hash__(self): return hash((self.title, self.author))
+
+6. Recursion:
+
+6.1 Pick an example from the 'Popular Recursion' section and explain why it is recursive.
+Droste effects: to make the image of a Droste effect, you need the image of a Droste effect  
+
+6.2 Why do all (non-infinite) recursive functions need to have a base case?
+Becase if not, the function will not terminate
+
+6.3 In 'Recursive Math', what's the functional difference between the function f5 and the function f7?
+f5 is quadratic while f7 is exponential (2**x)
+
+6.4 Why is the base case for the recursive function power different from the base cases of rangeSum and listSum?
+Because multiplying by 0 would always return 0. Multiplying by 1 displays the result  
+
+6.5 Add a print statement to the top of the basic rangeSum and the divide-and-conquer rangeSum, and count how many times each function is called on the same input. Describe what you observe and do your best to explain it.
+On the input 10,15 basic rangeSum is called 7 times 
+On the input 10,15 Divide-and-Conquer rangeSum is called 11 times
+Divide-and-conquer takes longer because it must descend down the upper half and lower half
+while basic only increments from the lower bound  
+
+6.6 Section 9 shows how functions can be implemented in both iterative and recursive ways. Of course, there can be multiple different iterative and recursive approaches to solve a problem. Describe two approaches, one iterative and one recursive, which you could use to solve the second example, reverse. These approaches should be different than the ones shown on the website.
+The iterative approach would consist of a while loop that adds characters to the answer while the starting string exists. 
+At the end of each loop cut off the last character of the string. 
+The recursive approach would be to recursively cut off letters at the end and add them to the stack such that it printed backwards

@@ -1,0 +1,70 @@
+check10.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id: Leandro Lopez lslopez
+
+2. The full names and andrew ids of your groupmates, if you worked in a group.
+
+3. Dates/times that you watched the videos listed in check9.html (fill this out as you go):
+0249, 0304, 0307, 0309, 0320, 0334, 0337, 0340, 0343, 0350
+
+4. Total time this check required (fill this out when you are done):
+70 mins
+
+5. Exceptions
+
+5.1 Consider the lastChar(s) function given on the notes page.  Write a simple try/except block that calls lastChar('') without the program crashing.
+
+def lastChar(s):
+	try: 
+		return s[-1]
+	except: 
+		return "String must be nonempty"
+
+6. Functions Redux
+
+6.1 When using variable length args, why would you put a * in front of the argument when calling the function?
+To unpack the given iteritible into a tuple 
+
+6.2 What is the problem with using a mutable default argument?
+Mutable default arguments will not clear on each function call 
+
+6.3 Look back at the animation framework used for this course.  Inside, we make use of lambda functions and functions as parameters.  Briefly describe how each is being used.
+A lambda event class is being used to bind Mouse presses and key presses to the canvas 
+
+6.4 What is the differences between making use of *args and **kwargs?
+**kwargs packages items into a dictionary 
+
+6.5 What is one reason you can think of to declare a function inside another function instead of making it global as we usually do?
+In order for the function to be self sufficient and in less need of dependencies 
+
+6.7 Describe, in your own words, what a function decorator does.  What is the relationship between function decorators and functions that return functions?
+Decorators alter the functionality of a function. It takes in another function as an argument
+and generates a new function 
+
+7. Recursion Part 2 Questions:
+
+7.1 Why would you need to expand the size of the stack?
+For some recursive problems, it will be necessary to recurse deeper than python allows
+
+7.2 Why is the memoized version of fib so much faster than the regular version?
+It stores results in a dictionary, thereby not having to compute results repeteadly 
+
+7.3 Which advanced worked examples (from 1-5) was the most interesting to you?  Why?
+printFiles seems like the most useful one to me since recursively printing files down 
+directories saves a lot of time.
+
+7.4 In your own words, describe what a fractal is.
+It's a set with a repeated pattern
+
+7.5 What is another problem you can think of that you might be able to solve using backtracking?
+Knight's tour
+

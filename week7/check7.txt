@@ -1,0 +1,86 @@
+check7.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name and andrew id: 
+Leandro Lopez
+
+2. The full names and andrew ids of your groupmates, if you worked in a group.
+
+3. Dates/times that you watched the videos listed in check7.html (fill this out as you go):
+
+4. Total time this check required (fill this out when you are done):
+60
+
+5. Sets Questions:
+
+5.1: Briefly describe the difference between a set and a list.
+
+5.2: Why should you use s=set() to declare an empty set instead of s={}?
+
+5.3: Describe a scenario where you think it would better to use a set than a list.  Why is it better in your scenario?
+
+5.4: Imagine I have two sets:  "animals" contains a list of animals in North America.  (For example: {"bear", "squirrel", "mouse", ...})  "pets" contains a list of pets in North American.  (For example: {"dog", "cat", "hamster",...}).  Give one line of python code to determine the animals in North America that are not pets.
+
+
+6. Dictionary Questions:
+
+6.1: Briefly describe the difference between a dictionary and a list.
+
+6.2: Our examples in the videos aren't very practical.  (For example, why would "cow" be associated with 5?)  Given a practical example for a time you might want to use a dictionary.
+
+6.3: Why do keys need to be immutable, but values don't?
+
+6.4: 'key in d' is used to determine if a key is in a dictionary.  Describe, at a high-level, how you could determine if a value is in a dictionary. 
+
+
+7. Efficiency Questions:
+
+7.1: What is the big-O of 400n + 32nlogn + 2n**2 + 56?
+O(n**2)
+
+7.2: Briefly described why we don't care about the constants when determining the big-O.
+Because constants have a lesser effect than function families for large N 
+
+7.3: When programming, why do we care if our algorithm is O(n**2) vs O(n)?
+
+Because for computationally intensive tasks, this difference will translate
+massive use of system resources and time. 
+
+7.4: What is the difference between code optimization and algorithmic optimization?
+Code optimization doesn't necessarily result in tangible efficiency improvements, unlike 
+algorithmic optimization. 
+
+7.5: What would be the big-O for this function (assuming that L and M are both lists of size N):
+def func(L,M):
+    for i in L:
+        for j in M:
+            if i == j:
+                return True
+
+O(n**2)
+
+7.6: Other than the examples given in the video, what is another python list operation that is O(N)?  Describe, at a high-level, why the operation is O(N).  (You'll need to follow the link to a more complete list.)
+
+list.index(x) is O(n) because it iterates over the entire input until the given input is found
+
+7.7: isPrime() does not take a list as input.  How, then, can it have a O(N) runtime when the input isn't n elements?
+Because isPrime() tests O(n) factors
+
+7.8a: Assume that I want to search for an item in a sorted list L.  Is it more efficient to use linear search or binary search?  Why?
+Binary search, because it utilizes the well ordered nature of the list by cutting it in half repeteadly. 
+
+7.8b: What if L is an unsorted list?  Is it more efficient to use linear search or binary search?  Why?
+Linear search is faster for unsorted lists because there is no algorithmic advantage to be gained by splitting up the list. 
+
+
+7.9: We know that the most efficient sorting algorithms are all O(nlogn).  But, imagine we have a list L that is "almost sorted", meaning that only one element of the list is out of place.  Describe an algorithm that is faster than O(nlogn) that you could use to sort this list. 
+
+Find out of place object and compare it to its right and left neighbor. Then shift it left or right.  

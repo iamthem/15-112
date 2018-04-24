@@ -1,0 +1,70 @@
+check1.txt
+
+Edit this file and then submit it to autolab.
+
+Be sure to watch the videos very carefully, and not just
+skip ahead to the parts required to answer these questions!
+
+Be *very brief* in your answers!  Seriously.  Brief.
+
+---------------------------------------------------------------------
+
+1. Your full name: Leandro Samuel Lopez Leon
+
+2. Your andrew id: lslopez
+
+3. Dates/times that you watched the videos listed in check1.html (fill this out as you go): 08/29/2017 at 2026
+
+4. Total time this check required (fill this out when you are done): 40 minutes 
+
+5. Getting Started Video:
+
+5.1. In the video, how do I distinguish programming from computer science?
+Programming deals with getting the computer to follow your instructions. Computer science deals with the broader problems of algorithms, applied math, and finding computational solutions to a variety of real world (and theoretical) problems. 
+
+5.2. Look through the Term Project Gallery and watch a few videos.  List here a project that you thought was compelling in some way, and briefly why:
+Escape Room VR, it's an interesting example of an immersive VR environment. 
+
+5.3. What were the two specific examples I used in the video that
+resulted in math.factorial generating errors?
+
+math.factorial(5.2)
+math.factorial(-2)
+
+6. Functions Video:
+
+6.1. In the video, how do I define "dead code"?
+Code that computes something, but the result is not used later in the code. 
+
+6.2. In the video, what did I do that resulted in Python printing this error message:  "TypeError: unsupported operand type9s) for *: 'NoneType' and 'int'"?
+print(cubed(2) * 2)
+This doesn't work because cubed() does not return a value. 
+
+6.3. In the video, how do I define "helper functions"?
+Function that help other functions, or functions that test other functions
+
+6.4. In the video, what is one reason I give for not using global variables?
+Because it interferes with variables with the same name in other function. 
+
+7. Data and Expressions Video
+
+7.1. What does pow(x,y) evaluate to?
+x to the power of y
+
+7.2. What is the difference between x/y and x//y?
+x/y evaluates traditional division while x//y evaluates floor division 
+
+7.3. What do we mean by "Types affect semantics"?
+Using binary operators with incompatible data types. 
+
+7.4. What is the difference between x//y and x%y?
+x//y gives you the quotient of the true division x/y while x%y gives you the remainder. thus x = qy + r. And x//y = q, x%y = r
+
+7.5. Why is it that printing ((0.1 + 0.1 + 0.1) == 0.3) prints False and not True?
+Python implements precision limits in calculations. This because memory and computational power is limited on our computers. 
+
+That's it.  We hope you had fun, learned a thing or two, and are now
+ready to dive in when we get going in earnest on Tuesday!
+
+Carpe diem!
+

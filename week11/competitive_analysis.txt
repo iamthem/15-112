@@ -1,0 +1,51 @@
+1) Describe the planned project
+I'll work on making interactive Breakout where the user's location determines 
+the location of the paddle. The users can move horizontallyin a 5 meter 
+range in front of the Microsoft Kinect. This will encourage physical vigor 
+in players while reviving a classing Atari game. The goal of this game is to 
+clear all the blocks from the board and get the maximum amount of points. 
+
+2) Evaluate the competition
+The Atari 2600 home version of Breakout: This project has a vintage
+aesthetic that can never be matched by a new game. What makes this project
+unique is the fact that it requires an Atari console to play, which is 
+difficult to find these days. 
+
+Blackberry's Brickbreaker: This project was my introduction to a Breakout-like
+game. It has many levels you get up to and a limited lifespan that is consumed
+as you progress through the levels. The cursor of Blackberrys made this game 
+very satisfying and addicting in a way that is hard to emulate. The user gets to 
+traverse many different levels with increasing difficulty while collecting coins, 
+power-ups, etc.
+
+Atari.com/arcade: This project is trying to revive the original feel of the original 
+while adding increased functionality like playing thorugh the network and including 
+support for gamepad integration. This project uses Adobe Flash Player to run the 
+animations. It also added progressive mode and cavity mode which weren't included in 
+the original version of Breakout, rather they were part of the subsequent SuperBreakout
+game
+
+3) Identify Dimensions for Comparison
+
+A) Original Aesthetic 
+B) New features 
+C) Accesibility 
+D) Multiplayer mode 
+E) Controls 
+
+A --> This dimesion is the most important because when considering implementing classic games
+the user, perhaps an older person who played the original game, wants to remember the good 
+ol' times when people went to arcades and interacted with other human beings. 
+
+B --> While original feel is important, innovation is also a part of the development process, 
+and ideally you would want to balance the classic with the forward-looking 
+
+C --> If no one can play your game, it is pointless. It should be freely available on the 
+internet 
+
+D --> Playing with friends always enhances the video-gaming experience, albeit this was 
+originally a single-player game 
+
+E --> Playing with a keyboard vs a control pad vs your body 
+
+
